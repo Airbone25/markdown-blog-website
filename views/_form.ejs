@@ -1,0 +1,13 @@
+<div class="form-group">
+    <label for="title" class="mt-4">Title: </label>
+    <input type="text" id="title" name="title" value="<%=blog.title%>" class="form-control" required>
+
+    <label for="description" class="mt-4">Description: </label>
+    <textarea name="description" id="description" class="form-control"><%= blog.description %></textarea>
+
+    <label for="markdown" class="mt-4">Blog Body(in markdown)</label>
+     <textarea name="markdown" id="markdown" class="form-control" required><%= blog.markdown %></textarea>
+
+     <a href="/" class="btn btn-secondary mt-4">Cancel</a>
+     <button type="submit" class="btn btn-primary mt-4">Save</button>
+</div>
